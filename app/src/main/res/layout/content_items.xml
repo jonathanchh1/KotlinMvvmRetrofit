@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/appcntion"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+        <TextView android:id="@+id/title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  tools:text="TITLE"
+                  android:textSize="15sp"
+                  android:layout_toRightOf="@id/thumbnail"
+                  android:layout_toEndOf="@id/thumbnail"
+                  android:text="@string/title"
+                  android:layout_marginLeft="40dp"
+                  android:layout_marginStart="40dp"
+                  android:textAlignment="center"
+                  android:textStyle="bold"
+                  android:textColor="@android:color/black"
+        />
+        <TextView
+                android:id="@+id/ingredient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="This is our ingredient"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:layout_toEndOf="@+id/thumbnail"
+                android:textStyle="italic"
+                android:text="@string/ingredient"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+        />
+
+        <TextView
+                android:id="@+id/href"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="This is href"
+                android:text="@string/href"
+                android:textStyle="italic"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:layout_toEndOf="@+id/thumbnail"
+                android:layout_below="@+id/ingredient"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp">
+
+        </TextView>
+
+    </RelativeLayout>

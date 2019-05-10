@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KotlinMvvmRetrofit</string>
+    <string name="appcntion">image</string>
+    <string name="title">Title</string>
+    <string name="ingredient">ingredient</string>
+    <string name="href">www.href.com</string>
+</resources>
